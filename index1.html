@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography Portfolio</title>
+  </head>
+  <body>
+    <!--* Background Video -->
+    <header class="Header">
+      <video autoplay muted loop>
+        <source src="VIDEO/BackgroundVideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="HeaderText">
+        <h1>Steve McCurry - Stories from the World</h1>
+        <p>Photography that transcends cultures and connects emotions.</p>
+      </div>
+    </header>
+    <!--* Navbar -->
+    <nav class="Navbar">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!--* About Me -->
+    <section id="about" class="About">
+      <div class="AboutContent">
+        <h2>About Me</h2>
+        <p>
+          I am Steve McCurry, known for capturing stories that reflect the
+          essence of humanity. With over four decades of experience, my
+          photography seeks to connect with the profound and emotional aspects
+          of each culture, leaving a visual legacy that transcends borders.
+        </p>
+      </div>
+      <img src="IMG/Steve.webp" alt="About Me" class="AboutImage" />
+    </section>
+    <!--* Gallery -->
+    <section id="gallery" class="Gallery">
+      <h2>Portraits from the World</h2>
+      <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="IMG/IMG1.webp" alt="Image 1">
+        </div>
+        <div class="slide fade">
+            <img src="IMG/IMG2.webp" alt="Image 2">
+        </div>
+        <div class="slide fade">
+            <img src="IMG/IMG3.webp" alt="Image 3">
+        </div>
+        <div class="slide fade">
+            <img src="IMG/IMG4.webp" alt="Image 4">
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    <script src="javascript.js"></script>
+      </div>
+    </section>
+    <!--* Contact -->
+    <section id="contact" class="Contact">
+      <h2>Connect with My Vision</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name" />
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your email" />
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Your message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <!--* Footer -->
+    <footer class="Footer">
+      <p>&copy; 2024 Steve McCurry - All rights reserved.</p>
+    </footer>
+  </body>
+</html>
